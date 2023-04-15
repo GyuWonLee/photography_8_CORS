@@ -1,7 +1,7 @@
 <?
     $DB_SERVER    = "localhost"; 
     $DB_USER_NAME = "dksuz";
-    $DB_USER_PW   = "Gy9610gy*";
+    $DB_USER_PW   = "*";
     $DB_NAME      = "dksuz";
 
     $conn = mysqli_connect($DB_SERVER, $DB_USER_NAME, $DB_USER_PW, $DB_NAME);
