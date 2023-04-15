@@ -1,0 +1,36 @@
+데이터베이스 설계
+
+
+
+
+고유인덱스번호 : 자동 증가번호
+index
+
+MVC 모델링
+
+＃ 데이터(데이터베이스) => Model
+＃ 화면을 보여준다.(html5, css3) => View
+＃ 화면을 제어(JS, JQUERY, JAVA, PHP) => Control
+
+
+FTP URL 경로
+dksuz.dothome.co.kr/photography_8/form_mail_test.php
+dksuz.dothome.co.kr/photography_8/form_mail_insert_test.php
+dksuz.dothome.co.kr/photography_8/form_mail_ajax_insert.php
+
+
+포토그라피 
+폼메일테이블
+가독성을 높인다. 
+form_mail_table
+
+
+
+idx       자동증가번호(AI)  Integer 11byte
+user_name 이름              문자열 String VARCHAR(가변형길이) 50
+user_email 이메일           문자열 String VARCHAR(가변형길이) 50
+user_message 메시지         문자열 String text(고정길이) - 게시판에서 많이 사용 : 약 64kb
+user_date 날짜              문자열 String VARCHAR(가변길이형)  2023-04-08  10자
+
+
+

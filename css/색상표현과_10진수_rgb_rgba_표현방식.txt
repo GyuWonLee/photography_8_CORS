@@ -1,0 +1,25 @@
+* {margin: 0;padding: 0;}
+ul {list-style: none;}
+body {
+    /* font: 굵기  크기/줄간격 '글꼴이름1','글꼴이름2','글꼴이름3';*/
+    font: normal 16px/1 'Nanum Gothic', 'Montserrat';
+    color: rgb(60, 60, 60);
+    color: rgb(0,0,0);
+    color: rgb(255,255,255);
+
+    color: rgb(255,0,0); /* 빨강 */
+    color: rgb(0,255,0); /* 녹색 */
+    color: rgb(0,0,255); /* 파랑 */
+
+    color: rgb(0,255,255); /* 청록 */
+    color: rgb(255,255,0); /* 노랑 */
+    color: rgb(230,180,0); /* 오렌지 */
+    color: rgb(180,230,0); /* 연두 */
+    color: rgb(255,0,255); /* 자주 */
+    color: rgb(190,0,255); /* 보라 */
+    color: rgb(100,0,255); /* 남색 */
+    color: rgb(255,0,100); /* 다홍색 */
+
+    color: rgba(255,0,100, 0.8); /* 다홍색+알파(색상투명도 0 ~ 1) */
+
+}

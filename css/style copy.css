@@ -1,0 +1,422 @@
+#wrap {width:100%;}
+/* 헤더 */
+#wrap #header {
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 76px;
+    background: rgba(0,0,0, 0.7);
+    border-bottom: 1px  solid  rgba(255,255,255, 0.15);
+}
+
+#wrap #header .container {
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;  /* 좌우가운데 */
+}
+#wrap #header .container .gap {
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+}
+
+/* 로고 왼쪽정렬 */
+#wrap #header .container .gap h1 {
+    width:156px;
+    margin: auto auto auto 0; 
+}
+#wrap #header .container .gap h1 a {display: block;width:100%;}
+#wrap #header .container .gap h1 a img {width: 100%;}
+
+/* 네비게이션 : 오른쪽정렬 */
+#wrap #header .container .gap nav {
+    margin: auto 0 auto auto;
+}
+#wrap #header .container .gap nav ul {
+    display: flex;
+}
+#wrap #header .container .gap nav ul li {
+    margin: 0 0 0 40px;     
+}
+#wrap #header .container .gap nav ul li a {
+    color: rgba(255,255,255, 1);
+    font-size: 12px;
+    font-weight: 600;
+    /* 시간추가 */
+    transition: all 0.3s;
+}
+
+#wrap #header .container .gap nav ul li a:hover {
+    color: rgba(255,255,255, 0.7);
+}
+
+
+
+
+/* 메인 */
+#wrap #main {
+    z-index: 2;
+    position: relative;
+    width:100%;
+}
+#wrap #main #section1 {
+    position: relative;
+    width:100%;height:100vh;background: url(../img/photography-img1.jpg) no-repeat 50% 50% fixed;
+    background-size: cover;
+    /* 타이틀 좌우가운데 상하가운데 정렬(레이아웃)*/
+    display: flex;
+    justify-content: center; /* 수평가운데 */
+    align-items: center; /* 수직정렬 */
+}
+#wrap #main #section1 h2 {
+    font-size: 200px;color:rgba(0,255,151, 0.5);
+    font-weight: 600;
+}
+
+#wrap #main #section1 span {
+    position: absolute;
+    bottom: 60px;
+    left: 0;   
+    width:100%; 
+    text-align: center;
+}
+#wrap #main #section1 span strong {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(255,255,255);    
+    display: inline-block;
+}
+/* 가상요소 만들기 */
+#wrap #main #section1 span strong::after {
+    content:'';    
+    display: block;
+    background: rgba(0,255,151, 1);
+    height: 3px;
+    margin: 20px 0 0 0;
+}
+
+
+#wrap #main #section2 {
+    position: relative;
+    width:100%;height:100vh;background: url(../img/photography-img2.jpg) no-repeat 50% 50% fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center; /* 수직 가운데 */
+    justify-content: center; /* 수평 가운데 */
+}
+#wrap #main #section2 h2 {
+    font-size: 200px;color:rgba(0,255,151, 0.5);
+    font-weight: 600;
+}
+/* foot */
+#wrap #main #section2 span {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#wrap #main #section2 span strong {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+}
+/* 가상요소 */
+#wrap #main #section2 span strong::after {
+    content:'';
+    display: block;
+    background: rgb(0,255,151);
+    margin: 20px 0 0 0;
+    height: 3px;
+    width: 100%;
+}
+
+
+
+#wrap #main #section3 {
+    width:100%;height:100vh;background: url(../img/photography-img3.jpg) no-repeat 50% 50% fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#wrap #main #section3 h2 {
+    font-size: 200px;
+    color: rgba(0,255,151, 0.5);
+    font-weight: 600;
+}
+#wrap #main #section3 span {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#wrap #main #section3 span strong {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#wrap #main #section3 span strong::after {
+    content:'';
+    display: block;
+    height: 3px;
+    background: rgb(0,255,151);
+    margin: 20px 0 0 0;
+}
+
+
+
+#wrap #main #section4 {
+    position: relative;
+    width:100%;height:100vh;background: url(../img/photography-img4.jpg) no-repeat 50% 50% fixed;
+    background-size: cover;
+    display: flex;
+    
+    /* 플렉스 부모요소 : 플렉스 컨테이너 */
+    /* 
+    부모요소에서 자식요소 정렬 방식
+    align-items: center;
+    justify-content: center; 
+    */
+}
+
+#wrap #main #section4 h2 {
+    font-size: 200px;
+    font-weight: 600;
+    color:rgba(0,255,151, 0.5);
+    /* 플렉스 자식요소 : 플렉스 아이템 */
+    /* margin: top right bottom left;  */
+    margin: auto 0 0 0;  /* 아래쪽 정렬 */
+    margin: 0 0 0 auto;  /* 오른쪽 정렬 */
+    margin: 0 auto 0 auto;  /* 가운데 정렬 */
+    margin: auto auto 0 auto;  /* 수직: 아래쪽  / 수평:가운데 정렬 */
+    margin: auto auto auto auto;  /* 수직: 가운데  / 수평   :가운데 정렬 */
+    margin: auto auto;  /* 수직: 가운데  / 수평   :가운데 정렬 */
+    margin: auto;  /* 수직: 가운데  / 수평   :가운데 정렬 */
+    margin: auto auto auto 0;  /* 수직: 가운데  / 수평   :가운데 정렬 */
+    margin: auto;  /* 수직: 가운데  / 수평   :가운데 정렬 */
+}
+
+#wrap #main #section4 span {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;    
+}
+#wrap #main #section4 span strong {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+#wrap #main #section4 span strong::after {
+    content:'';
+    display: block;
+    height: 3px;
+    background: rgb(0,255,151);
+    margin: 20px 0 0 0;
+}
+
+
+
+
+
+
+#wrap #main #section5 {width:100%;height:600px;background-color: rgba(200,100,0, 0.5);}
+#wrap #main #section6 {width:100%;height:700px;background-color: rgba(200,250,100, 0.5);}
+#wrap #main #section7 {width:100%;height:600px;background-color: rgba(200,200,0, 0.5);}
+
+/* SHUFFLE GALLERY */
+#wrap #main #section8 {
+    width:100%;height:700px;background: #fff;
+    padding: 130px 0;
+}
+#wrap #main #section8 .container {}
+#wrap #main #section8 .container .gap {}
+
+/* 타이틀 숨김 */
+/* #wrap #main #section8 .container .gap .title {} */
+
+#wrap #main #section8 .container .gap .centent {}
+
+/* 갤러리 메뉴 버튼 */
+#wrap #main #section8 .container .gap .centent nav {}
+#wrap #main #section8 .container .gap .centent nav ul {}
+#wrap #main #section8 .container .gap .centent nav ul li {}
+#wrap #main #section8 .container .gap .centent nav ul li a {}
+
+
+/* 갤러리 이미지박스 */
+#wrap #main #section8 .container .gap .centent .gallery {}
+#wrap #main #section8 .container .gap .centent .gallery ul {}
+#wrap #main #section8 .container .gap .centent .gallery ul li {}
+#wrap #main #section8 .container .gap .centent .gallery ul li .col-gap {}
+#wrap #main #section8 .container .gap .centent .gallery ul li .col-gap .img-box {}
+#wrap #main #section8 .container .gap .centent .gallery ul li .col-gap .img-box img {}
+
+
+/* AWARDS */
+#wrap #main #section9 {
+    padding: 130px 0;
+    width:100%;
+    background: #f7f7f7 url(../img/photography-img25.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+#wrap #main #section9 .container {width:1170px;margin:0 auto;}
+/* 패딩은 너비에 포함한다. 리셋에서 셋팅 박스사이징: 보더박스 */
+/* 내부내용너비는 1140px 이 된다. */
+/* #wrap #main #section9 .container .gap {padding: 0 15px;width:100%;height: 700px;} */
+/* 마진을 사용하고 너비를 100%주면 너비는 좌우 마진 때문에 좌우15px 씩 커진다.
+그래서 1200 되버린다. 잘못된 경우*/
+/* #wrap #main #section9 .container .gap {margin: 0 15px;width:100%;} */
+#wrap #main #section9 .container .gap {margin: 0 15px;width:auto;display: flex;}
+#wrap #main #section9 .container .gap article {width:50%;}
+/* 좌측박스 */
+#wrap #main #section9 .container .gap article:nth-child(1) h2 {
+    font-size: 100px;
+    color: rgba(0,255,151, 0.5);
+    padding: 75.5px 0 0 0;
+    font-weight: 600;
+}
+/* 우측박스 */
+/* 타이틀 */
+#wrap #main #section9 .container .gap article:nth-child(2) .title {display: flex;align-items: center;justify-content: space-between;}
+#wrap #main #section9 .container .gap article:nth-child(2) .title hr {border:0;width:75%;height:1px;background: rgba(0,255,151, 1);}
+#wrap #main #section9 .container .gap article:nth-child(2) .title h3 {font-size: 20px;color: rgb(98,98,98);font-weight: 500;}
+/* 갤러리 목록 */
+#wrap #main #section9 .container .gap article:nth-child(2)  ul {padding: 30px 0;width:100%;display: flex;flex-flow: row wrap;}
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li {width: 50%;display: flex;padding: 15px 10px;}
+/* 이미지박스 */
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li figure {width:67.5px;}
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li figure img {width:100%;}
+/* 테스트박스 */
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li div {padding: 0 0 0 15px;}
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li div h4 {font-size: 13px;color:rgb(98,98,98);font-weight: 500;}
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li div h5 {padding: 10px 0 15px 0;font-size: 11px;color:rgb(98,98,98);}
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li div span {display: block;}
+#wrap #main #section9 .container .gap article:nth-child(2)  ul li div span i {display: block;width:30px;height: 2px;background: rgb(190, 190, 190);}
+
+
+
+
+
+
+/* 섹션10 ~ 섹션14 공통요소 스타일 적용 */
+#wrap #main .section10-14 {
+    width:100%;
+    height: 246.391px;
+    position: relative;
+}
+
+/* 섹션10 자식요소 생성(가상요소 Virrture Element)  배경이미지박스  */
+#wrap #main .section10-14::before {
+    content:''; /* 가상요소 태그 생성 배경이미지 필터링 */
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url() no-repeat 50% 40%;
+    background-size: cover;
+    filter: brightness(0.7); 
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+#wrap #main .section10-14:hover::before {
+    background-position: 50% 20%;
+}
+
+#wrap #main .section10-14::after {
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; /* 부모요소의 너비를 다 사용하겠다 */
+    height: 100%; /* 부모요소의 높이를 다 사용하겠다 */
+    z-index: 2;
+    background: rgba(70,70,70, 0.6);
+    transition: all 0.3s;
+}
+
+#wrap #main .section10-14:hover::after {
+    background-color: rgba(70,70,70, 0.2);
+}
+
+
+
+/* 섹션별 배경이미지 설정하기 */
+#wrap #main #section10::before {
+    background-image: url(../img/photography-img35.jpg.webp);
+}
+#wrap #main #section11::before {
+    background-image: url(../img/photography-img36.jpg.webp);
+}
+#wrap #main #section12::before {
+    background-image: url(../img/photography-img37.jpg.webp);
+}
+#wrap #main #section13::before {
+    background-image: url(../img/photography-img38.jpg.webp);
+}
+#wrap #main #section14::before {
+    background-image: url(../img/photography-img39.jpg.webp);
+}
+
+
+
+/* 섹션10~14 박스모델링 및 타이틀 */
+#wrap #main .section10-14 .container {width: 1170px;margin: 0 auto;z-index: 3;position: relative;height: 100%;}
+#wrap #main .section10-14 .container .gap {padding: 0 15px;display: flex;align-items: center;height: 100%;}
+
+/* 좌측 타이틀 */
+#wrap #main .section10-14 .container .gap .left {width:50%;display: flex;align-items:center;}
+#wrap #main .section10-14 .container .gap .left h2 {color:rgba(133,238,165, 1);font-size: 80px;font-weight: 500;width: 130px;}
+#wrap #main .section10-14 .container .gap .left h3 {color:rgba(255,255,255, 1);font-size: 12px;font-weight: 600;}
+#wrap #main .section10-14 .container .gap .left h3::after {
+    content:'';
+    display: block;
+    width: 125%;
+    height: 2px;
+    background: rgb(0,255,151);
+    margin: 5px 0 0 0;
+    transition: all 0.3s;
+}
+#wrap #main .section10-14:hover .container .gap .left h3::after {width: 150%;}
+
+
+/* 우측 타이틀 */
+#wrap #main .section10-14 .container .gap .right {width:50%;}
+#wrap #main .section10-14 .container .gap .right p {color:rgba(255,255,255, 1);font-size: 18px;font-weight: 600;padding: 0 0 20px 0;line-height: 120%;}
+#wrap #main .section10-14 .container .gap .right h6 {color:rgba(255,255,255, 0.5);font-size: 11px;font-weight: 500;}
+#wrap #main .section10-14 .container .gap .right h6 a {color:rgba(255,255,255, 0.5);transition: all 0.3s;}
+#wrap #main .section10-14 .container .gap .right h6 a:hover {color:rgba(255,255,255, 0.3);}
+
+
+
+
+
+
+#wrap #main #section13 {width:100%;height:246.391px;background-color: rgba(200,250,100, 0.5);}
+#wrap #main #section14 {width:100%;height:246.391px;background-color: rgba(250,100,100, 0.5);}
+#wrap #main #section15 {width:100%;height:700px;background-color: rgba(100,100,150, 0.5);}
+
+/* 투터 */
+#wrap #footer {
+    z-index: 1;
+    position: relative;
+    width:100%;
+    height:300px;
+    background-color: rgba(200,100,150, 0.5);
+}

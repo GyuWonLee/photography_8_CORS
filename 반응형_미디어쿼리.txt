@@ -1,0 +1,31 @@
+
+http://wpdemos.themezaa.com/brando/photography/
+
+dksuz.dothome.co.kr/photo_8/
+
+admin 계정 
+dksuz.dothome.co.kr/myadmin 
+
+아이디 비밀번호 입력
+
+서버이름 localhost 
+서버 사용자이름 로그인 한 것 
+사용자: dksuz@localhost
+
+
+1. 섹션8 콘테이너를 반응형으로 설정
+.container {
+    width: 100%;
+    max-width: 1170px;
+
+2. 네비게이션 너비(754.625px)에 화면 해상도가 도달하면 =>조건문 css 미디어쿼리
+메뉴의 좌우 마진값을 반응으로 수정한다. 
+
+기준 => 네비게이션 너비 754.625px / 100 => 7.54625
+1vw 단위 => 7.54625 px
+
+마진 30 => 반응형 단위 vw 변경
+30 / 7.54625 => 3.975484512vw
+
+
+

@@ -1,0 +1,21 @@
+
+
+localhost/0401_브란드_포토그라피_미디어쿼리_모바일_태블릿_데스크탑_반응형
+C:\AutoSet10\public_html\
+
+
+http://localhost/0409_
+
+SSL 인증서를 갖고 있는 도메인
+https://localhost/0409_
+
+닷홈배포
+https://dksuz.co.kr
+
+git 배포
+
+닷홈 웹서버/데이터베이스 서버
+CORS(Cross Origin Resource Sharing)
+https://.php
+http://.php
+http://.jsp
