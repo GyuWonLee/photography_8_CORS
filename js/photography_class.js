@@ -754,7 +754,7 @@
                     }
 
                     $.ajax({
-                        url:'http://dksuz.dothome.co.kr/photography_8/form_mail_ajax_insert', //서버파일 폼데이터를 받는다.
+                        url:'http://dksuz.dothome.co.kr/photography_8/form_mail_ajax_insert.php', //서버파일 폼데이터를 받는다.
                         type: 'POST',
                         data: formData, // 폼데이터
                         success(result){ // 응답 결과 확인
